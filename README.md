@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hi there! I'm Bilal Nnasser, a passionate Mobile and Web Developer with a solid background in creating user-centric applications and websites. My expertise spans building responsive mobile apps and developing dynamic websites, with a focus on delivering seamless user experiences.<br><br>I'm constantly learning and evolving, embracing new challenges with enthusiasm.🚀
+👋 Hi there! I'm Bilal Nnasser, a passionate Mobile and Web Developer with a solid background in creating user-centric applications and websites. My expertise spans building responsive mobile apps and developing dynamic websites, with a focus on delivering seamless user experiences.<br>I'm constantly learning and evolving, embracing new challenges with enthusiasm.🚀
 
 
 ## 🌐 Socials:
