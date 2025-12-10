@@ -1,19 +1,16 @@
 name: Generate Pacman Graph
 
 on:
-  # Run automatically every 24 hours
   schedule:
-    - cron: "0 0 * * *" 
-  
-  # Allows you to run it manually from the Actions tab for testing
+    - cron: "0 0 * * *" # Runs every 24 hours
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions: 
+    permissions:
       contents: write
-    
+      
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -25,17 +22,14 @@ jobs:
 
       - name: Generate Pacman Graph
         run: |
-          # Create a directory for the output
           mkdir -p dist
+          # The correct package name has '-graph' at the end
+          npm install -g pacman-contribution-graph
           
-          # Run the pacman-contribution tool via npx
-          # We explicitly install it to ensure we get the package
-          npm install pacman-contribution
+          # Run the command (options: --platform github --username YOUR_USERNAME)
+          pacman-contribution-graph --username ${{ github.repository_owner }} --platform github --output dist/pacman-contribution-graph.svg
           
-          # Generate the SVG
-          npx pacman-contribution --username ${{ github.repository_owner }} > dist/pacman-contribution-graph.svg
-          
-          # Create a copy for the dark mode file (so the HTML snippet doesn't 404)
+          # Create a dark mode copy
           cp dist/pacman-contribution-graph.svg dist/pacman-contribution-graph-dark.svg
 
       - name: Push to Output Branch
