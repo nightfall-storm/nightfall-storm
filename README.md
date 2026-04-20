@@ -30,7 +30,7 @@ While my heart is in the frontend, I’m highly proficient in the full-stack eco
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ## Stats
-[![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/nightfall-storm?cardType=level-alternate&theme=github-dark&fontFamily=&preferLogin=false)](https://git.io/awesome-stats-card)
+[![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/nightfall-storm?cardType=level-alternate&theme=tokyonight&fontFamily=&preferLogin=false)](https://git.io/awesome-stats-card)
 
 ---
 <picture>
